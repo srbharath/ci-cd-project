@@ -32,12 +32,11 @@
       tags:
         - package
 
-    - name: Install rabbitmq Repository Package
-      apt:
-        deb: https://dl.bintray.com/rabbitmq/debian bionic main
+    - apt_repository:
+        repo: deb https://dl.bintray.com/rabbitmq/debian bionic main
+        state: present
       tags:
         - package
-        
 
     - name: Install Rabbit MQ
       apt:
@@ -95,3 +94,4 @@
       service:
         name: rabbitmq-server
         state: restarted
+        
