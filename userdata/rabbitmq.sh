@@ -5,7 +5,6 @@ sudo yum install wget -y
 sudo yum install socat -y
 sudo wget https://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_23.3.1-1~centos~7_amd64.rpm
 sudo yum -y install esl-erlang*.rpm
-sudo erl
 sudo wget https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.8.19/rabbitmq-server-3.8.19-1.el7.noarch.rpm
 sudo yum -y install rabbitmq-server*.rpm 
 sudo systemctl start rabbitmq-server.service
